@@ -1,12 +1,12 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidAudioRecorder-green.svg?style=true)](https://android-arsenal.com/details/1/4099) [![Release](https://jitpack.io/v/adrielcafe/AndroidAudioRecorder.svg)](https://jitpack.io/#adrielcafe/AndroidAudioRecorder)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidAudioRecorder-green.svg?style=true)](https://android-arsenal.com/details/1/4099) [![Release](https://jitpack.io/v/octsjimmy/AndroidAudioRecorder.svg)](https://jitpack.io/#octsjimmy/AndroidAudioRecorder)
 
 # AndroidAudioRecorder
 
 > A fancy audio recorder for Android. It supports `WAV` format at `48kHz`.
 
-![Screenshots](https://raw.githubusercontent.com/adrielcafe/AndroidAudioRecorder/master/demo.gif)
+![Screenshots](https://raw.githubusercontent.com/octsjimmy/AndroidAudioRecorder/master/demo.gif)
 
-![Screenshots](https://raw.githubusercontent.com/adrielcafe/AndroidAudioRecorder/master/screenshots.png)
+![Screenshots](https://raw.githubusercontent.com/octsjimmy/AndroidAudioRecorder/master/screenshots.png)
 
 ## How To Use
 
@@ -86,7 +86,7 @@ dependencies {
 * [WaveInApp](https://github.com/Cleveroad/WaveInApp)
 
 ## Want to CONVERT AUDIO into your app?
-**Take a look at [AndroidAudioConverter](https://github.com/adrielcafe/AndroidAudioConverter)! Example of usage [here](https://github.com/adrielcafe/AndroidAudioRecorder/issues/8#issuecomment-247311572).**
+**Take a look at [AndroidAudioConverter](https://github.com/OCTSJimmy/AndroidAudioConverter)! Example of usage [here](https://github.com/adrielcafe/AndroidAudioRecorder/issues/8#issuecomment-247311572).**
 
 ## License
 ```
