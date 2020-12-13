@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
+import java.io.File;
 
 import cafe.adriel.androidaudiorecorder.AndroidAudioRecorder;
 import cafe.adriel.androidaudiorecorder.model.AudioChannel;
@@ -29,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setBackgroundDrawable(
                     new ColorDrawable(ContextCompat.getColor(this, R.color.colorPrimaryDark)));
         }
-
+        File dstPath = new File(AUDIO_FILE_PATH);
+        if(dstPath.exists()) {
+            dstPath.deleteOnExit();
+        }
         Util.requestPermission(this, Manifest.permission.RECORD_AUDIO);
+        Util.requestPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);
         Util.requestPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
@@ -50,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         AndroidAudioRecorder.with(this)
                 // Required
                 .setFilePath(AUDIO_FILE_PATH)
-                .setColor(ContextCompat.getColor(this, R.color.recorder_bg))
+                .setColor(ContextCompat.getColor(this, R.color.colorPrimary))
                 .setRequestCode(REQUEST_RECORD_AUDIO)
 
                 // Optional
