@@ -1,4 +1,4 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidAudioRecorder-green.svg?style=true)](https://android-arsenal.com/details/1/4099) [![Release](https://jitpack.io/v/octsjimmy/AndroidAudioRecorder.svg)](https://jitpack.io/#octsjimmy/AndroidAudioRecorder)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidAudioRecorder-green.svg?style=true)](https://android-arsenal.com/details/1/4099) [![Release](https://jitpack.io/v/OCTSJimmy/AndroidAudioRecorder.svg)](https://jitpack.io/#OCTSJimmy/AndroidAudioRecorder)
 
 # AndroidAudioRecorder
 
@@ -64,7 +64,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.adrielcafe:AndroidAudioRecorder:${lastest_version}'
+  implementation 'com.github.OCTSJimmy:AndroidAudioRecorder:${lastest_version}'
 }
 ```
 
