@@ -27,7 +27,7 @@ import cafe.adriel.androidaudiorecorder.model.AudioChannel;
 import cafe.adriel.androidaudiorecorder.model.AudioSampleRate;
 import cafe.adriel.androidaudiorecorder.model.AudioSource;
 import omrecorder.AudioChunk;
-import omrecorder.OmRecorder;
+import omrecorder.OmRecorderEx;
 import omrecorder.PullTransport;
 import omrecorder.Recorder;
 
@@ -282,7 +282,7 @@ public class AudioRecorderActivity extends AppCompatActivity
 
         if (recorder == null) {
             timerView.setText("00:00:00");
-            recorder = OmRecorder.wav(
+            recorder = OmRecorderEx.amr(
                     new PullTransport.Default(Util.getMic(source, channel, sampleRate), AudioRecorderActivity.this),
                     new File(filePath));
         }

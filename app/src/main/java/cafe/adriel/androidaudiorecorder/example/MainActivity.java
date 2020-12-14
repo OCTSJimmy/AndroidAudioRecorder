@@ -20,7 +20,7 @@ import cafe.adriel.androidaudiorecorder.model.AudioSource;
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_RECORD_AUDIO = 0;
     private static final String AUDIO_FILE_PATH =
-            Environment.getExternalStorageDirectory().getPath() + "/recorded_audio.wav";
+            Environment.getExternalStorageDirectory().getPath() + "/recorded_audio.amr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
